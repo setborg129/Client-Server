@@ -1,4 +1,6 @@
 # «class», «function», «method»
+#2
+
 
 first_word = b'class'
 print(type(first_word))
