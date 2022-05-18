@@ -1,12 +1,12 @@
 # yandex.ru, youtube.com
-
+# 5
 import os
 
 ip_list = input("Введите IP адрес: ")
 
 response = os.popen(f'ping {ip_list}').read()
 
-response = os.popen(f'ping ya.ru').read()
+# response = os.popen(f'ping ya.ru').read()
 
 print(response)
 
