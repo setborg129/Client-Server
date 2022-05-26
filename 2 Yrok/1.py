@@ -61,16 +61,16 @@ def get_data(text_file):
 
 def write_to_csv(list_csv):
     pass
-    # good_list_csv = []
-    # for number, line in enumerate(list_csv):
-    #     good_list_csv.append({
-    #         'Название ОС:': os_name_list,
-    #         'Код продукта:': os_prod_list,
-    #         'Изготовитель системы:': os_code_list,
-    #         'Тип системы:': os_type_list,
-    #     })
-    # df.to_excel('write_to_xlsx.xlsx', index=False)
-    # print(f'Файл write_to_xlsx.xlsx успешно записан !')
+    good_list_csv = []
+    for number, line in enumerate(list_csv):
+        good_list_csv.append({
+            'Название ОС:': os_name_list,
+            'Код продукта:': os_prod_list,
+            'Изготовитель системы:': os_code_list,
+            'Тип системы:': os_type_list,
+        })
+    df.to_excel('write_to_xlsx.xlsx', index=False)
+    print(f'Файл write_to_xlsx.xlsx успешно записан !')
 
 
 get_data(file_text)
