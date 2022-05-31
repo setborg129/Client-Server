@@ -3,10 +3,10 @@
 
 import json
 def write_order_to_json(item, quantity, price, buyer, date):
-    with open('orders.json', 'r', encoding='cp1251') as f_out:
+    with open('orders.json', 'r', encoding='utf-8') as f_out:
         data = json.load(f_out)
 
-    with open('orders.json', 'w', encoding='windows-1251') as file:
+    with open('orders.json', 'w', encoding='utf-8') as file:
         dict_list = {'item': item,
                      'quantity': quantity,
                      'price': price,
